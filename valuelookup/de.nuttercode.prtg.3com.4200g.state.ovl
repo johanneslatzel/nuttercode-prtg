@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ValueLookup id="de.nuttercode.prtg.3com.4200g.state" desiredValue="1" undefinedState="Error"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="PaeValueLookup.xsd">
+	<Lookups>
+		<SingleInt state="Ok" value="1">
+        active
+      </SingleInt>
+		<SingleInt state="Error" value="2">
+        inactive
+      </SingleInt>
+		<SingleInt state="Warning" value="3">
+        not-installed
+      </SingleInt>
+		<SingleInt state="Ok" value="4">
+        not supported
+      </SingleInt>
+	</Lookups>
+</ValueLookup>
