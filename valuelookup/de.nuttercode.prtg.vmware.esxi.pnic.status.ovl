@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ValueLookup id="de.nuttercode.prtg.vmware.esxi.pnic.status" desiredValue="1" undefinedState="Error"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="PaeValueLookup.xsd">
+	<Lookups>
+		<SingleInt state="Error" value="0">
+        link, link status und admin status down
+      </SingleInt>
+		<SingleInt state="Error" value="1">
+        link status und admin status down
+      </SingleInt>
+		<SingleInt state="Error" value="2">
+        link und admin status down
+      </SingleInt>
+		<SingleInt state="Error" value="3">
+        admin status down
+      </SingleInt>
+		<SingleInt state="Error" value="4">
+        link und link status down
+      </SingleInt>
+		<SingleInt state="Error" value="5">
+        link status down
+      </SingleInt>
+		<SingleInt state="Error" value="6">
+        link down
+      </SingleInt>
+		<SingleInt state="Ok" value="7">
+        Up
+      </SingleInt>
+	</Lookups>
+</ValueLookup>

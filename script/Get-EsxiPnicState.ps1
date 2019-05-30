@@ -59,7 +59,7 @@ $esxcli.network.nic.list.invoke() | % {
     if( $_.AdminStatus -eq "Up" ) {
         $status = $status -bor 4
     }
-    $sensor = $sensor | Add-PRTGChannel -name "$($_.name) Status" -value $status -unit Custom -value_lookup_id "de.neuenhauser.prtg.vmware.esxi.pnic.status"
+    $sensor = $sensor | Add-PRTGChannel -name "$($_.name) Status" -value $status -unit Custom -value_lookup_id "de.nuttercode.prtg.vmware.esxi.pnic.status"
 }
 
 $sensor | Convert-PRTGSensorToXML
