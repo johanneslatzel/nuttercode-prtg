@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ValueLookup id="de.nttercode.prtg.windows.server.dcdiag" desiredValue="1" undefinedState="Error"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="PaeValueLookup.xsd">
+	<Lookups>
+		<SingleInt state="Warning" value="0">
+        Failed Test
+      </SingleInt>
+		<SingleInt state="OK" value="1">
+        Passed Test
+      </SingleInt>
+	</Lookups>
+</ValueLookup>
