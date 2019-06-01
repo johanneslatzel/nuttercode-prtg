@@ -14,7 +14,7 @@
 #
 # Dependencies:
 #
-#     value lookup "de.nuttercode.prtg.windows.server.dhcp.failover.state"
+#     valuelookup "de.nuttercode.prtg.windows.server.dhcp.failover.state"
 #     target device: Windows DHCP-Server with "Get-DhcpServerv4Failover" CMDlet installed
 #     PRTG module (https://github.com/johanneslatzel/powershellmodules)
 #
