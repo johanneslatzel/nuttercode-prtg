@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ValueLookup id="de.nuttercode.prtg.hwg-ste.temperature-sensor.state" desiredValue="1" undefinedState="Error" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="PaeValueLookup.xsd">
+	<Lookups>
+		<SingleInt state="Warning" value="0">
+			invalid
+		</SingleInt>
+		<SingleInt state="Ok" value="1">
+			normal
+		</SingleInt>
+		<SingleInt state="Warning" value="2">
+			outofrangelo
+		</SingleInt>
+		<SingleInt state="Warning" value="3">
+			outofrangehi
+		</SingleInt>
+		<SingleInt state="Error" value="4">
+			alarmlo
+		</SingleInt>
+		<SingleInt state="Error" value="5">
+			alarmhi
+		</SingleInt>
+	</Lookups>
+</ValueLookup>
