@@ -14,7 +14,7 @@ Available sensors:
 | NIC state | vmware | ESXi | 🔴 |
 | environment temperature | HW Group | HWg-STE | 🔴 |
 | citrix license statistics | | | 🔴 |
-| windows dhcp statistics | | | 🔴 |
-| windows dhcp failover state | | | 🔴 |
+| windows dhcp statistics and failover state | | | 🔴 |
+| ssd health, temperature, and ca, cm, disk, raid, and volume state | fujitsu | eternus dx100 s3 | 🔴 |
 
 Feel free to [contribute](https://github.com/johanneslatzel/nuttercode-prtg/blob/master/CONTRIBUTING.md).
