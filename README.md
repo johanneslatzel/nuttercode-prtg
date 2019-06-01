@@ -9,17 +9,17 @@ Attention: Not all scripts have been tested thoroughly. Please report problems a
 Available sensors for hardware:
 
 | type | manufacturer | model | tested |
-| - | - | - | - |
-| switch state | 3com | 4200g | partly |
-| switch state | 3com | 4500g | partly |
-| GPU state | citrix | xen host | partly |
-| NIC state | vmware | ESXi | partly |
-| temperature sensor | HW Group | HWg-STE | partly |
+| :-: | :-: | :-: | :-: |
+| switch state | 3com | 4200g | 🔴 |
+| switch state | 3com | 4500g | 🔴 |
+| GPU state | citrix | xen host | 🔴 |
+| NIC state | vmware | ESXi | 🔴 |
+| temperature sensor | HW Group | HWg-STE | 🔴 |
 
 Available sensors for software:
 
 | type | tested |
-| - | - | - |
-| citrix license statistics | partly |
-| windows dhcp statistics | partly |
-| windows dhcp failover state | partly |
+| :-: | :-: |
+| citrix license statistics | 🔴 |
+| windows dhcp statistics | 🔴 |
+| windows dhcp failover state | 🔴 |
