@@ -18,7 +18,7 @@ Available sensors for hardware:
 
 Available sensors for software:
 
-| type | manufacturer tested |
+| type | manufacturer | tested |
 | - | - | - |
 | license statistics | citrix | partly |
 | windows dhcp statistics | microsoft | partly |
