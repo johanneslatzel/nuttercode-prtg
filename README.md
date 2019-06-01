@@ -4,7 +4,7 @@ This repository contains some scripts which return xml data for [advanced custom
 
 All scripts are dependend on [those PRTG and SNMP powershell modules](https://github.com/johanneslatzel/powershellmodules). Additional dependencies are documented in the dependend scripts.
 
-Available sensors for hardware:
+Available sensors:
 
 | type | manufacturer | model | tested |
 | :-: | :-: | :-: | :-: |
@@ -13,13 +13,8 @@ Available sensors for hardware:
 | GPU state | citrix | xen host | 🔴 |
 | NIC state | vmware | ESXi | 🔴 |
 | environment temperature | HW Group | HWg-STE | 🔴 |
-
-Available sensors for software:
-
-| type | tested |
-| :-: | :-: |
-| citrix license statistics | 🔴 |
-| windows dhcp statistics | 🔴 |
-| windows dhcp failover state | 🔴 |
+| citrix license statistics | | | 🔴 |
+| windows dhcp statistics | | | 🔴 |
+| windows dhcp failover state | | | 🔴 |
 
 Feel free to [contribute](https://github.com/johanneslatzel/nuttercode-prtg/blob/master/CONTRIBUTING.md).
