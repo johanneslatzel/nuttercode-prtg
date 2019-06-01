@@ -14,7 +14,7 @@ Available sensors for hardware:
 | switch state | 3com | 4500g | 🔴 |
 | GPU state | citrix | xen host | 🔴 |
 | NIC state | vmware | ESXi | 🔴 |
-| temperature sensor | HW Group | HWg-STE | 🔴 |
+| environment temperature | HW Group | HWg-STE | 🔴 |
 
 Available sensors for software:
 
