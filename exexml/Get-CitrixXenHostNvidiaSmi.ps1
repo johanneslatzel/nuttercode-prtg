@@ -15,7 +15,6 @@
 #
 # Dependencies:
 #
-#     Powershell 5.1
 #     Posh-SSH module (https://www.powershellgallery.com/packages/Posh-SSH/2.1)
 #
 ########################################################################################################################

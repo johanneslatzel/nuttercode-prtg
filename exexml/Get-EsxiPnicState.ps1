@@ -14,7 +14,6 @@
 #
 # Dependencies:
 #
-#     Powershell 5.1
 #     PRTG (https://github.com/johanneslatzel/powershellmodules)
 #     VMware PowerCLI 6.5
 #

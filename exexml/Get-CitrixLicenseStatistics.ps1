@@ -16,7 +16,6 @@
 #
 # Vorausstzungen:
 #
-#     Powershell 5.1
 #     PRTG module (https://github.com/johanneslatzel/powershellmodules)
 #     SNMP module (https://github.com/johanneslatzel/powershellmodules)
 #

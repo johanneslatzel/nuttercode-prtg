@@ -14,7 +14,6 @@
 #
 # Dependencies:
 #
-#     Powershell 5.0
 #     PRTG module (https://github.com/johanneslatzel/powershellmodules)
 #     SNMP module (https://github.com/johanneslatzel/powershellmodules)
 #     de.nuttercode.prtg.3com.4200g.state
