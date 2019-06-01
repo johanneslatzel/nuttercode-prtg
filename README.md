@@ -17,4 +17,4 @@ Available sensors:
 | windows dhcp statistics and failover state | | | 🔴 |
 | ssd health, temperature, and ca, cm, disk, raid, and volume state | fujitsu | eternus dx100 s3 | 🔴 |
 
-Feel free to [contribute](https://github.com/johanneslatzel/nuttercode-prtg/blob/master/CONTRIBUTING.md).
+Feel free to [contribute](https://github.com/johanneslatzel/nuttercode-prtg/blob/master/CONTRIBUTING.md). A full documentation will be added in the future.
