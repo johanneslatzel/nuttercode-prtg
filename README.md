@@ -1,6 +1,6 @@
 # nuttercode-prtg
 
-This repository contains some scripts which  return xml data for [advanced custom prtg sensors](https://www.paessler.com/manuals/prtg/exe_script_advanced_sensor) as an [exe/xml sensor](https://www.paessler.com/manuals/prtg/custom_sensors#exe_script).
+This repository contains some scripts which return xml data for [advanced custom prtg sensors](https://www.paessler.com/manuals/prtg/exe_script_advanced_sensor) as an [exe/xml sensor](https://www.paessler.com/manuals/prtg/custom_sensors#exe_script).
 
 All scripts are dependend on [those PRTG and SNMP powershell modules](https://github.com/johanneslatzel/powershellmodules). Additional dependencies are documented in the dependend scripts.
 
