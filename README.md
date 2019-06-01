@@ -2,7 +2,7 @@
 
 This repository contains some scripts which return xml data for [advanced custom sensors](https://www.paessler.com/manuals/prtg/exe_script_advanced_sensor) as an [exe/xml sensor](https://www.paessler.com/manuals/prtg/custom_sensors#exe_script) for [prtg monitoring](https://www.de.paessler.com/prtg).
 
-All scripts are dependend on [those PRTG and SNMP powershell modules](https://github.com/johanneslatzel/powershellmodules). Additional dependencies are documented in the dependend scripts.
+All scripts are dependend on [those PRTG and SNMP powershell modules](https://github.com/johanneslatzel/powershellmodules). Additional dependencies are documented in the dependend scripts. A full documentation will be added in the future.
 
 Available sensors:
 
@@ -17,4 +17,4 @@ Available sensors:
 | windows dhcp statistics and failover state | | | 🔴 |
 | ssd health, temperature, and ca, cm, disk, raid, and volume state | fujitsu | eternus dx100 s3 | 🔴 |
 
-Feel free to [contribute](https://github.com/johanneslatzel/nuttercode-prtg/blob/master/CONTRIBUTING.md). A full documentation will be added in the future.
+Feel free to [contribute](https://github.com/johanneslatzel/nuttercode-prtg/blob/master/CONTRIBUTING.md).
