@@ -18,8 +18,8 @@ Available sensors for hardware:
 
 Available sensors for software:
 
-| type | manufacturer | tested |
+| type | tested |
 | - | - | - |
-| license statistics | citrix | partly |
-| windows dhcp statistics | microsoft | partly |
-| windows dhcp failover state | microsoft | partly |
+| citrix license statistics | partly |
+| windows dhcp statistics | partly |
+| windows dhcp failover state | partly |
