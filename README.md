@@ -13,7 +13,7 @@ Available sensors:
 | GPU state | citrix | xen host | 🔴 |
 | NIC state | vmware | ESXi | 🔴 |
 | environment temperature | HW Group | HWg-STE | 🔴 |
-| citrix license statistics | | | 🔴 |
+| license statistics | citrix | | 🔴 |
 | windows dhcp statistics and failover state | | | 🔴 |
 | ssd health, temperature, and ca, cm, disk, raid, and volume state | fujitsu | eternus dx100 s3 | 🔴 |
 
