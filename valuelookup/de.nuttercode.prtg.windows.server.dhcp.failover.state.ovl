@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ValueLookup id="de.nuttercode.prtg.windows.server.dhcp.failover.state" desiredValue="1690472495" undefinedState="Error"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="PaeValueLookup.xsd">
+	<Lookups>
+		<SingleInt state="Warning" value="756575278">
+        NoState
+      </SingleInt>
+		<SingleInt state="OK" value="1690472495">
+        Normal
+      </SingleInt>
+		<SingleInt state="Warning" value="2126706816">
+        Init
+      </SingleInt>
+		<SingleInt state="Error" value="-953866172">
+        CommunicationInterrupted
+      </SingleInt>
+		<SingleInt state="Error" value="-1747930088">
+        PartnerDown
+      </SingleInt>
+		<SingleInt state="Warning" value="-1100720970">
+        PotentialConflict
+      </SingleInt>
+		<SingleInt state="Warning" value="-479645567">
+        Startup
+      </SingleInt>
+		<SingleInt state="Warning" value="1062028910">
+        ResolutionInterrupted
+      </SingleInt>
+		<SingleInt state="Error" value="310209140">
+        ConflictDone
+      </SingleInt>
+		<SingleInt state="Warning" value="-1010127550">
+        Recover
+      </SingleInt>
+		<SingleInt state="Warning" value="1419625097">
+        RecoverWait
+      </SingleInt>
+		<SingleInt state="OK" value="-1383421606">
+        RecoverDone
+      </SingleInt>
+	</Lookups>
+</ValueLookup>
