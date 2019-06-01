@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ValueLookup id="de.neuenhauser.prtg.eternus.dx100s3.disk.status" desiredValue="1" undefinedState="Error" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="PaeValueLookup.xsd">
+	<Lookups>
+		<SingleInt state="Ok" value="1">
+			available
+		</SingleInt>
+		<SingleInt state="Error" value="2">
+			broken
+		</SingleInt>
+		<SingleInt state="Warning" value="3">
+			not-avaiable
+		</SingleInt>
+		<SingleInt state="Warning" value="4">
+			not-supported
+		</SingleInt>
+		<SingleInt state="Ok" value="5">
+			present
+		</SingleInt>
+		<SingleInt state="Warning" value="6">
+			readying
+		</SingleInt>
+		<SingleInt state="Warning" value="7">
+			recovering
+		</SingleInt>
+		<SingleInt state="Error" value="64">
+			partbroken
+		</SingleInt>
+		<SingleInt state="Ok" value="65">
+			spare
+		</SingleInt>
+		<SingleInt state="Warning" value="66">
+			formatting
+		</SingleInt>
+		<SingleInt state="Warning" value="67">
+			unformatted
+		</SingleInt>
+		<SingleInt state="OK" value="68">
+			notexist
+		</SingleInt>
+		<SingleInt state="Warning" value="69">
+			copying
+		</SingleInt>
+	</Lookups>
+</ValueLookup>

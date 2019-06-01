@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ValueLookup id="de.nuttercode.prtg.fujitsu.eternus.dx100s3.raid.state" desiredValue="1" undefinedState="Error" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="PaeValueLookup.xsd">
+	<Lookups>
+		<SingleInt state="Warning" value="1">
+			unknown
+		</SingleInt>
+		<SingleInt state="Ok" value="2">
+			ok
+		</SingleInt>
+		<SingleInt state="Error" value="3">
+			degraded
+		</SingleInt>
+		<SingleInt state="Error" value="6">
+			error
+		</SingleInt>
+		<SingleInt state="Warning" value="15">
+			dormant
+		</SingleInt>
+	</Lookups>
+</ValueLookup>

@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ValueLookup id="de.nuttercode.prtg.fujitsu.eternus.dx100s3.disk.comp.state" desiredValue="1" undefinedState="Error" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="PaeValueLookup.xsd">
+	<Lookups>
+		<SingleInt state="Ok" value="1">
+			normal
+		</SingleInt>
+		<SingleInt state="Warning" value="2">
+			alarm
+		</SingleInt>
+		<SingleInt state="Warning" value="3">
+			warning
+		</SingleInt>
+		<SingleInt state="Warning" value="4">
+			invalid
+		</SingleInt>
+		<SingleInt state="ok" value="5">
+			maintenance
+		</SingleInt>
+		<SingleInt state="Warning" value="6">
+			undefined
+		</SingleInt>
+	</Lookups>
+</ValueLookup>
