@@ -16,6 +16,7 @@
 # Dependencies:
 #
 #     Posh-SSH module (https://www.powershellgallery.com/packages/Posh-SSH/2.1)
+#     Nuttercode-PRTG (https://github.com/johanneslatzel/powershellmodules)
 #
 ########################################################################################################################
 #

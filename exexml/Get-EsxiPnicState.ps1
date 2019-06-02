@@ -14,7 +14,7 @@
 #
 # Dependencies:
 #
-#     PRTG (https://github.com/johanneslatzel/powershellmodules)
+#     Nuttercode-PRTG (https://github.com/johanneslatzel/powershellmodules)
 #     VMware PowerCLI 6.5
 #
 ########################################################################################################################

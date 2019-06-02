@@ -14,8 +14,8 @@
 #
 # Dependencies:
 #
-#     PRTG module (https://github.com/johanneslatzel/powershellmodules)
-#     SNMP module (https://github.com/johanneslatzel/powershellmodules)
+#     Nuttercode-PRTG (https://github.com/johanneslatzel/powershellmodules)
+#     Nuttercode-SNMP (https://github.com/johanneslatzel/powershellmodules)
 #     valuelookup "de.nuttercode.prtg.fujitsu.eternus.dx100s3.disk.comp.state"
 #
 ########################################################################################################################

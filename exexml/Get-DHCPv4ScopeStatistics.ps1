@@ -15,7 +15,7 @@
 # Dependencies:
 #
 #     target device: Windows DHCP-Server with "Get-DhcpServerv4ScopeStatistics" CMDlet installed
-#     PRTG module (https://github.com/johanneslatzel/powershellmodules)
+#     Nuttercode-PRTG (https://github.com/johanneslatzel/powershellmodules)
 #
 ########################################################################################################################
 #
