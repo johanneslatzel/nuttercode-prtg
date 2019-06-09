@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ValueLookup id="de.nuttercode.prtg.netapp.nvram.state" desiredValue="2" undefinedState="Error"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="PaeValueLookup.xsd">
+	<Lookups>
+		<SingleInt state="OK" value="1">
+        ok
+      </SingleInt>
+		<SingleInt state="OK" value="2">
+        partiallyDischarged
+      </SingleInt>
+		<SingleInt state="Error" value="3">
+        fullyDischarged
+      </SingleInt>
+		<SingleInt state="Error" value="4">
+        notPresent
+      </SingleInt>
+		<SingleInt state="Warning" value="5">
+        nearEndOfLife
+      </SingleInt>
+		<SingleInt state="Error" value="6">
+        atEndOfLife
+      </SingleInt>
+		<SingleInt state="Error" value="7">
+        unknown
+      </SingleInt>
+		<SingleInt state="Error" value="8">
+        overCharged
+      </SingleInt>
+		<SingleInt state="Error" value="9">
+        fullyCharged
+      </SingleInt>
+	</Lookups>
+</ValueLookup>

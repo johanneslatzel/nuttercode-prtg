@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ValueLookup id="de.nuttercode.prtg.netapp.global.state" desiredValue="2" undefinedState="Error"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="PaeValueLookup.xsd">
+	<Lookups>
+		<SingleInt state="Warning" value="1">
+        other
+      </SingleInt>
+		<SingleInt state="OK" value="2">
+        ok
+      </SingleInt>
+		<SingleInt state="Warning" value="3">
+        unknown
+      </SingleInt>
+		<SingleInt state="Warning" value="4">
+        nonCritical
+      </SingleInt>
+		<SingleInt state="Error" value="5">
+        critical
+      </SingleInt>
+		<SingleInt state="Error" value="6">
+        nonRecoverable
+      </SingleInt>
+	</Lookups>
+</ValueLookup>
