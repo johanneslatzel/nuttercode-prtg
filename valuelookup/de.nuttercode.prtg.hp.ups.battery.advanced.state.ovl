@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ValueLookup id="de.nuttercode.prtg.hp.ups.battery.advanced.state" desiredValue="4" undefinedState="Error"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="PaeValueLookup.xsd">
+	<Lookups>
+		<SingleInt state="OK" value="1">
+        batteryCharging
+      </SingleInt>
+		<SingleInt state="OK" value="2">
+        batteryDischarging
+      </SingleInt>
+		<SingleInt state="Warning" value="3">
+        batteryFloating
+      </SingleInt>
+		<SingleInt state="OK" value="4">
+        batteryResting
+      </SingleInt>
+		<SingleInt state="Warning" value="5">
+        unknown
+      </SingleInt>
+	</Lookups>
+</ValueLookup>
