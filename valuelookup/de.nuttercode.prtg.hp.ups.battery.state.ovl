@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ValueLookup id="de.nuttercode.prtg.hp.ups.battery.state" desiredValue="2" undefinedState="Error"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="PaeValueLookup.xsd">
+	<Lookups>
+		<SingleInt state="Warning" value="0">
+        unknown
+      </SingleInt>
+		<SingleInt state="Warning" value="1">
+        unknown
+      </SingleInt>
+		<SingleInt state="OK" value="2">
+        passed
+      </SingleInt>
+		<SingleInt state="Error" value="3">
+        failed
+      </SingleInt>
+		<SingleInt state="OK" value="4">
+        inProgress
+      </SingleInt>
+		<SingleInt state="OK" value="5">
+        notSupported
+      </SingleInt>
+		<SingleInt state="Warning" value="6">
+        inhibited
+      </SingleInt>
+		<SingleInt state="OK" value="7">
+        scheduled
+      </SingleInt>
+	</Lookups>
+</ValueLookup>
