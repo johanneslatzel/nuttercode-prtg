@@ -8,8 +8,8 @@
 #
 # Description:
 #
-#     gets output load, output and input voltage, input frequency and current, environment temperature, and battery test
-#     state, estimated time remaining, capacity, and advanced state of an HP UPS device
+#     gets output load, output and input voltage, input frequency and current, environment temperature, and battery
+#     estimated time remaining, capacity, and test and advanced state of an HP UPS device
 #
 ########################################################################################################################
 #
