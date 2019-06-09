@@ -16,5 +16,6 @@ Available sensors:
 | windows dhcp statistics and failover state | | | 🔴 |
 | ssd health, temperature, and ca, cm, disk, raid, and volume state | fujitsu | eternus dx100 s3 | 🔴 |
 | snapshot statistics and consolidation needed, esxi pnic state, and cluster usage | vmware/esxi |  | 🔴 |
+| nvram and global state | netapp |  | 🔴 |
 
 Feel free to [contribute](https://github.com/johanneslatzel/nuttercode-prtg/blob/master/CONTRIBUTING.md).
