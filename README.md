@@ -6,17 +6,16 @@ All scripts are dependend on [those PRTG and SNMP powershell modules](https://gi
 
 Available sensors:
 
-| type | manufacturer | model | tested |
+| data | manufacturer | model/type | tested |
 | :-: | :-: | :-: | :-: |
-| switch state | 3com | 4200g | 🔴 |
-| switch state | 3com | 4500g | 🔴 |
+| switch state | 3com | switch 4200g and 4500g | 🔴 |
 | gpu state | citrix | xen host | 🔴 |
 | environment temperature | hw group | hwg-ste | 🔴 |
-| license statistics | citrix | | 🔴 |
-| windows dhcp statistics and failover state | | | 🔴 |
+| license statistics | citrix | windows server | 🔴 |
+| windows dhcp statistics and failover state | microsoft | windows server (dhcp) | 🔴 |
 | ssd health, temperature, and ca, cm, disk, raid, and volume state | fujitsu | eternus dx100 s3 | 🔴 |
-| snapshot statistics and consolidation needed, esxi pnic state, and cluster usage | vmware/esxi |  | 🔴 |
-| nvram and global state | netapp |  | 🔴 |
-| output load, output and input voltage, input frequency and current, environment temperature, and battery estimated time remaining, capacity, and test and advanced state | hp ups |  | 🔴 |
+| snapshot statistics and consolidation needed, esxi pnic state, and cluster usage | vmware | vcenter/esxi | 🔴 |
+| nvram and global state | netapp | ontap storage node/cluster | 🔴 |
+| output load, output and input voltage, input frequency and current, environment temperature, and battery estimated time remaining, capacity, and test and advanced state | hp | ups | 🔴 |
 
 Feel free to [contribute](https://github.com/johanneslatzel/nuttercode-prtg/blob/master/CONTRIBUTING.md).
