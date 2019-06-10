@@ -1,30 +1,24 @@
-﻿########################################################################################################################
-#
-# Author: Johannes B. Latzel
-# 
-# Version: 2019.05.30
-# 
-########################################################################################################################
-#
-# Description:
-#
-#     gets sensor data of the fans, power supplies, memory and cpus of a 3com switch model 4200G
-#
-########################################################################################################################
-#
-# Dependencies:
-#
-#     Nuttercode-PRTG (https://github.com/johanneslatzel/powershellmodules)
-#     Nuttercode-SNMP (https://github.com/johanneslatzel/powershellmodules)
-#     valuelookup "de.nuttercode.prtg.3com.4200g.state"
-#
-########################################################################################################################
-#
-# Parameter:
-#
-#     [String]$Hostname: hostname or ip-address of target
-#
-########################################################################################################################
+﻿<#
+    .SYNOPSIS
+        gets sensor data of fans, power supplies, memory and cpus of a 3com switch model 4200G
+    .DESCRIPTION
+        see synopsis
+    .NOTES
+        Author: Johannes B. Latzel (http://www.nuttercode.de)
+    .LINK
+       https://github.com/johanneslatzel/nuttercode-prtg/wiki/Get-3comSwitchState4200g.ps1
+    .EXAMPLE
+        .\Get-3comSwitchState4200g.ps1 -Hostname myHostname
+    .Parameter Hostname
+        hostname or ip-address of target switch
+    .INPUTS
+        parameter
+    .OUTPUTS
+        exexml format of sensor output
+    .COMPONENT
+        Nuttercode-PRTG and Nuttercode-SNMP (https://github.com/johanneslatzel/powershellmodules)
+        valuelookup "de.nuttercode.prtg.3com.4200g.state"
+#>
 
 Param (
     [Parameter(Mandatory=$True,Position=1)][String]$Hostname

@@ -1,32 +1,29 @@
-########################################################################################################################
-#
-# Author: Johannes B. Latzel
-# 
-# Version: 2019.05.30
-# 
-########################################################################################################################
-#
-# Beschreibung:
-#
-#     calls "nvidia-smi" (via ssh) on the target device (citrix xen host) and parses the resulting data corresponding
-#     to the physical gpus
-#
-########################################################################################################################
-#
-# Dependencies:
-#
-#     Posh-SSH module (https://www.powershellgallery.com/packages/Posh-SSH/2.1)
-#     Nuttercode-PRTG (https://github.com/johanneslatzel/powershellmodules)
-#
-########################################################################################################################
-#
-# Parameter:
-#
-#     [string]$Hostname: hostname or ip address of remote device
-#     [string]$Username: username of user authorized to access the target device via ssh
-#     [string]$Password: password of user
-#
-########################################################################################################################
+<#
+    .SYNOPSIS
+        calls "nvidia-smi" (via ssh) on the target device (citrix xen host) and parses the resulting data corresponding
+        to the physical gpus
+    .DESCRIPTION
+        see synopsis.
+    .NOTES
+        Author: Johannes B. Latzel (http://www.nuttercode.de)
+    .LINK
+       https://github.com/johanneslatzel/nuttercode-prtg/wiki/Get-CitrixXenHostNvidiaSmi.ps1
+    .EXAMPLE
+        .\Get-CitrixXenHostNvidiaSmi.ps1 -Hostname myHostname -Username myUser -Password myPassword
+    .Parameter Hostname
+        hostname or ip-address of xen host server
+    .Parameter Username
+        username of user authorized to access the target device via ssh
+    .Parameter Password
+        password of user
+    .INPUTS
+        parameter
+    .OUTPUTS
+        exexml format of sensor output
+    .COMPONENT
+        Nuttercode-PRTG (https://github.com/johanneslatzel/powershellmodules)
+        Posh-SSH (https://www.powershellgallery.com/packages/Posh-SSH/2.1)
+#>
 
 Param(
     [Parameter(Mandatory=$True,Position=0)][string]$Hostname,
@@ -36,7 +33,6 @@ Param(
 
 
 $ErrorActionPreference = "Stop"
-
 $session = New-SSHSession -AcceptKey -ComputerName $Hostname -Credential (
     New-Object System.Management.Automation.PSCredential("$Username", ($Password | ConvertTo-SecureString -AsPlainText -Force))
 )

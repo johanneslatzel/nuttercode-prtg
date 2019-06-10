@@ -1,34 +1,30 @@
-########################################################################################################################
-#
-# Author: Johannes B. Latzel
-# 
-# Version: 2019.06.02
-# 
-########################################################################################################################
-#
-# Description:
-#
-#     collects current snapshot data of an vmware environment
-#
-########################################################################################################################
-#
-# Dependencies:
-#
-#     Nuttercode-PRTG (https://github.com/johanneslatzel/powershellmodules)
-#     Nuttercode-SNMP (https://github.com/johanneslatzel/powershellmodules)
-#     VMware PowerCLI 6.5
-#
-########################################################################################################################
-#
-# Parameter:
-#
-#     [string]$Hostname: hostname or ip-address of vmware vcenter server
-#     [string]$Username: name of authorized user
-#     [string]$Password: password of user
-#     [string]$Domain: domain of user
-#
-########################################################################################################################
-
+<#
+    .SYNOPSIS
+        gets current snapshot data of an vmware environment
+    .DESCRIPTION
+        see synopsis
+    .NOTES
+        Author: Johannes B. Latzel (http://www.nuttercode.de)
+    .LINK
+       https://github.com/johanneslatzel/nuttercode-prtg/wiki/Get-VmwareSnapshotStats.ps1
+    .EXAMPLE
+        .\Get-VmwareSnapshotStats.ps1 -Hostname myHostname -Username myUser -Password myPassword -Domain myDomain
+    .Parameter Hostname
+        hostname or ip-address of vmware vcenter server
+    .Parameter Username
+        name of authorized user (read-only)
+    .Parameter Password
+        password of user
+    .Parameter Domain
+        domain of user
+    .INPUTS
+        parameter
+    .OUTPUTS
+        exexml format of sensor output
+    .COMPONENT
+        Nuttercode-PRTG (https://github.com/johanneslatzel/powershellmodules)
+        VMware PowerCLI 6.5
+#>
 
 Param (
     [Parameter(Mandatory=$True,Position=0)][string]$Hostname,
@@ -63,6 +59,7 @@ $snapshots | % {
         $oldest = $age
     }
 }
+
 New-PRTGSensor |
     Set-PRTGSensorText -text $text |
     Add-PRTGChannel -name "Snapshots" -value $snapshots.Count -unit Count |

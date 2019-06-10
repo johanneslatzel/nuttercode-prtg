@@ -1,34 +1,31 @@
-﻿########################################################################################################################
-#
-# Author: Johannes B. Latzel
-# 
-# Version: 2019.05.30
-# 
-########################################################################################################################
-#
-# Description:
-#
-#     gets the number of used licences of a citrix licensing server via WMI
-#
-#     based on "https://kb.paessler.com/en/topic/29223-how-can-i-set-up-a-monitor-for-citrix-license-use-on-license-server"
-#
-########################################################################################################################
-#
-# Vorausstzungen:
-#
-#     Nuttercode-PRTG (https://github.com/johanneslatzel/powershellmodules)
-#     Nuttercode-SNMP (https://github.com/johanneslatzel/powershellmodules)
-#
-########################################################################################################################
-#
-# Parameter:
-#
-#     [string]$Hostname: hostname or ip address of target device
-#     [string]$Username: username of authorized user (WMI read-only in "ROOT\CitrixLicensing")
-#     [string]$Password: password of user
-#     [string]$Domain: domain of user
-#
-########################################################################################################################
+﻿<#
+    .SYNOPSIS
+        gets the number of used licences on a citrix licensing server via WMI
+    .DESCRIPTION
+        see synopsis. based on "https://kb.paessler.com/en/topic/29223-how-can-i-set-up-a-monitor-for-citrix-license-use-on-license-server".
+        every type of licenses is represented in two channels (absolute and percentage).
+    .NOTES
+        Author: Johannes B. Latzel (http://www.nuttercode.de)
+    .LINK
+       https://github.com/johanneslatzel/nuttercode-prtg/wiki/Get-CitrixLicenseStatistics.ps1
+    .EXAMPLE
+        .\Get-CitrixLicenseStatistics.ps1 -Hostname myHostname -Username myUser -Password myPassword -Domain myDomain
+    .Parameter Hostname
+        hostname or ip-address of windows server
+    .Parameter Username
+        username of authorized user (WMI read-only in "ROOT\CitrixLicensing")
+    .Parameter Password
+        password of user
+    .Parameter Domain
+        domain of user
+    .INPUTS
+        parameter
+    .OUTPUTS
+        exexml format of sensor output
+    .COMPONENT
+        Nuttercode-PRTG (https://github.com/johanneslatzel/powershellmodules)
+        WMI "ROOT\CitrixLicensing"
+#>
 
 Param (
     [Parameter(Mandatory=$True,Position=0)][string]$Hostname,
@@ -68,7 +65,7 @@ Get-WmiObject -Class "Citrix_GT_License_Pool" -Namespace "ROOT\CitrixLicensing" 
 } {$list} | % {
     $sensor = $sensor |
         Add-PRTGChannel -name "$($_.pld)" -value $_.inUseCount -unit Count |
-        Add-PRTGChannel -name "$($_.pld) %" -value ([int](100 * $_.inUseCount / $_.count)) -unit Percent -limit (New-PRTGChannelLimit  -DisableMin -warning_max 90 -error_max 95)
+        Add-PRTGChannel -name "$($_.pld) %" -value ([int](100 * $_.inUseCount / $_.count)) -unit Percent -limit (New-PRTGChannelLimit -DisableMin -warning_max 90 -error_max 95)
 }
 
 $sensor | Convert-PRTGSensorToXML
