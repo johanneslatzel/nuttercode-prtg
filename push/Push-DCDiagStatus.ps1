@@ -1,31 +1,29 @@
-########################################################################################################################
-#
-# Author: Johannes B. Latzel
-# 
-# Version: 2019.06.01
-# 
-########################################################################################################################
-#
-# Description:
-#
-#     runs dcdiag on the local domain controller, parses the output and sends the results to a prtg server via http push
-#
-########################################################################################################################
-#
-# Dependencies:
-#
-#     PRTG module (https://github.com/johanneslatzel/powershellmodules)
-#
-########################################################################################################################
-#
-# Parameter:
-#
-#     [string]$Probename: hostname of ip address of remote probe on which a http push sensor is configured
-#     [string]$Port: port of the http push sensor
-#     [string]$Guid: giud of the http push sensor
-#
-########################################################################################################################
-
+<#
+    .SYNOPSIS
+        runs dcdiag on the local domain controller, parses the output and sends the results to a prtg server via http push
+    .DESCRIPTION
+        see synopsis. default port is 5050 and default guid is the local computername (lower case).
+    .NOTES
+        Author: Johannes B. Latzel (http://www.nuttercode.de)
+    .LINK
+       https://github.com/johanneslatzel/nuttercode-prtg/wiki/Push-DCDiagStatus.ps1
+    .EXAMPLE
+        .\Push-DCDiagStatus -Probename myProbename
+    .EXAMPLE
+        .\Push-DCDiagStatus -Probename myProbename -Port myPort -Guid myGuid
+    .Parameter Probename
+        hostname of ip address of remote probe on which a http push sensor is configured
+    .Parameter Port
+        port of the http push sensor
+    .Parameter Guid
+        guid of the http push sensor
+    .INPUTS
+        parameter
+    .OUTPUTS
+        exexml format of sensor output
+    .COMPONENT
+        Nuttercode-PRTG (https://github.com/johanneslatzel/powershellmodules)
+#>
 
 Param (
     [Parameter(Mandatory=$True,Position=0)][string]$Probename,
@@ -35,8 +33,6 @@ Param (
 
 
 $ErrorActionPreference = "Stop"
-
-
 $sensor = New-PRTGSensor
 
 @(
