@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ValueLookup id="de.nutttercode.prtg.juniper.ssg.vpn.ph2.state" desiredValue="1" undefinedState="Error"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="PaeValueLookup.xsd">
+	<Lookups>
+		<SingleInt state="Error" value="0">
+        inactive
+      </SingleInt>
+		<SingleInt state="OK" value="1">
+        active
+      </SingleInt>
+	</Lookups>
+</ValueLookup>
